@@ -1,5 +1,6 @@
 {:deps     {:aliases [:dev]}
- :dev-http {8000 "resources/public" #_"classpath" #_"classpath:public"}
+ ;;:dev-http {8000 "resources/public" #_"classpath" #_"classpath:public"}
+ :nrepl    {:init-ns user}
  :builds   {:main {:target     :browser
                    :output-dir "resources/public/js/main"
                    :asset-path "/js/main"
@@ -9,3 +10,4 @@
                    :devtools   {:after-load app.client/refresh
                                 :preloads   [com.fulcrologic.fulcro.inspect.preload
                                              com.fulcrologic.fulcro.inspect.dom-picker-preload]}}}}
+;; npx shadow-cljs server
