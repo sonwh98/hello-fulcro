@@ -1,4 +1,4 @@
-{:paths   ["src/main" "resources/public"]
+{:paths   ["src/main" "resources"]
  :deps    {org.clojure/clojure    {:mvn/version "1.10.3"}
            com.fulcrologic/fulcro {:mvn/version "3.7.3"}
            com.wsscode/pathom     {:mvn/version "2.2.15"}
